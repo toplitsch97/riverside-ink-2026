@@ -438,6 +438,11 @@ h1,h2,h3 { font-family: var(--font-display); font-weight: 400; line-height: .95;
   .nav__burger { display: flex; }
 }
 
+/* Hide the scroll indicator on mobile */
+@media (max-width: 768px) {
+  .scroll-cue { display: none; }
+}
+
 /* =====================================================================
    REDUCED MOTION
    ===================================================================== */
