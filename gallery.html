@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Riverside Ink</title>
+<meta name="description" content="Portfolio von Riverside Ink — echte Tattoo-Arbeiten. Filterbar, mit Lightbox.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<section class="section" style="padding-top:160px">
+  <div class="wrap">
+    <span class="eyebrow" data-reveal>Portfolio</span>
+    <h1 class="h-xxl" data-reveal data-delay="1" style="margin-bottom:30px">Gallery</h1>
+    <p class="lead" data-reveal data-delay="2" style="margin-bottom:40px">Eine Auswahl echter Arbeiten aus unseren Studios. Klick auf ein Bild für die grosse Ansicht.</p>
+
+    <div class="filters" data-reveal data-delay="3">
+      <button class="active" data-filter="all">Alle</button>
+      <button data-filter="tattoo">Tattoo</button>
+      <button data-filter="studio">Studio</button>
+    </div>
+
+    <div class="gallery-grid">
+      <figure data-cat="tattoo" data-full="assets/photos/45-Lola.jpg"><img src="assets/photos-thumb/45-Lola.jpg" alt="Tattoo" loading="lazy"></figure>
+      <figure data-cat="tattoo" data-full="assets/photos/Image.jpeg"><img src="assets/photos-thumb/Image.jpg" alt="Tattoo" loading="lazy"></figure>
+      <figure data-cat="tattoo" data-full="assets/photos/1-1.jpg"><img src="assets/photos-thumb/1-1.jpg" alt="Tattoo" loading="lazy"></figure>
+      <figure data-cat="tattoo" data-full="assets/photos/IMG_0540.jpeg"><img src="assets/photos-thumb/IMG_0540.jpg" alt="Tattoo" loading="lazy"></figure>
+      <figure data-cat="tattoo" data-full="assets/photos/3-1.jpg"><img src="assets/photos-thumb/3-1.jpg" alt="Tattoo" loading="lazy"></figure>
+      <figure data-cat="tattoo" data-full="assets/photos/image_6483441.jpg"><img src="assets/photos-thumb/image_6483441.jpg" alt="Tattoo" loading="lazy"></figure>
+      <figure data-cat="tattoo" data-full="assets/photos/5-1.jpg"><img src="assets/photos-thumb/5-1.jpg" alt="Tattoo" loading="lazy"></figure>
+      <figure data-cat="tattoo" data-full="assets/photos/IMG_1611.jpeg"><img src="assets/photos-thumb/IMG_1611.jpg" alt="Tattoo" loading="lazy"></figure>
+      <figure data-cat="tattoo" data-full="assets/photos/7-1.jpg"><img src="assets/photos-thumb/7-1.jpg" alt="Tattoo" loading="lazy"></figure>
+      <figure data-cat="tattoo" data-full="assets/photos/image_6483441-2.jpg"><img src="assets/photos-thumb/image_6483441-2.jpg" alt="Tattoo" loading="lazy"></figure>
+      <figure data-cat="tattoo" data-full="assets/photos/9-1.jpg"><img src="assets/photos-thumb/9-1.jpg" alt="Tattoo" loading="lazy"></figure>
+      <figure data-cat="tattoo" data-full="assets/photos/IMG_1584.jpeg"><img src="assets/photos-thumb/IMG_1584.jpg" alt="Tattoo" loading="lazy"></figure>
+      <figure data-cat="tattoo" data-full="assets/photos/11-1.jpg"><img src="assets/photos-thumb/11-1.jpg" alt="Tattoo" loading="lazy"></figure>
+      <figure data-cat="tattoo" data-full="assets/photos/238d4ad6-da5d-4f1d-8b98-15fc4cfbe3e3.jpg"><img src="assets/photos-thumb/238d4ad6-da5d-4f1d-8b98-15fc4cfbe3e3.jpg" alt="Tattoo" loading="lazy"></figure>
+      <figure data-cat="tattoo" data-full="assets/photos/12-1.jpg"><img src="assets/photos-thumb/12-1.jpg" alt="Tattoo" loading="lazy"></figure>
+      <figure data-cat="tattoo" data-full="assets/photos/image_6483441-1.jpg"><img src="assets/photos-thumb/image_6483441-1.jpg" alt="Tattoo" loading="lazy"></figure>
+      <figure data-cat="studio" data-full="assets/photos/02ec1a1e-108d-4a45-8fd4-6647873cb760.jpg"><img src="assets/photos-thumb/02ec1a1e-108d-4a45-8fd4-6647873cb760.jpg" alt="Studio" loading="lazy"></figure>
+      <figure data-cat="studio" data-full="assets/photos/unnamed.jpg"><img src="assets/photos-thumb/unnamed.jpg" alt="Studio" loading="lazy"></figure>
+      <figure data-cat="studio" data-full="assets/photos/IMG_1450.jpg"><img src="assets/photos-thumb/IMG_1450.jpg" alt="Studio" loading="lazy"></figure>
+      <figure data-cat="studio" data-full="assets/photos/unnamed-1.jpg"><img src="assets/photos-thumb/unnamed-1.jpg" alt="Studio" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="wrap">
+    <h2 class="h-xl" data-reveal>Dein Motiv als nächstes?</h2>
+    <div data-reveal data-delay="1" style="margin-top:26px"><a class="btn" href="kontakt.html">Termin anfragen</a></div>
+  </div>
+</section>
+
+
+<!-- LIGHTBOX -->
+<div class="lightbox">
+  <button class="lightbox__close" aria-label="Schliessen">×</button>
+  <button class="lightbox__nav prev" aria-label="Zurück">‹</button>
+  <img src="" alt="Tattoo gross">
+  <button class="lightbox__nav next" aria-label="Weiter">›</button>
+</div>
+
+<script src="js/layout.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+# tooling / heavy artifacts — not needed for the live site
+node_modules/
+package.json
+package-lock.json
+record*.mjs
+compose.sh
+*.log
+
+# scraped originals + recording scratch (kept locally only)
+import/
+rec/
+video-out/
+chk/
+
+# big local-only preview video (not part of the site)
+/riverside-preview.mp4

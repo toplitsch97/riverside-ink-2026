@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt &amp; Standorte — Riverside Ink</title>
+<meta name="description" content="Kontakt zu Riverside Ink. Studios St. Margrethen & St. Gallen. Termin anfragen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<section class="section" style="padding-top:160px">
+  <div class="wrap">
+    <span class="eyebrow" data-reveal>Sag Hallo</span>
+    <h1 class="h-xxl" data-reveal data-delay="1" style="margin-bottom:50px">Kontakt</h1>
+
+    <div class="contact-grid">
+      <!-- FORM -->
+      <form data-reveal onsubmit="event.preventDefault(); this.querySelector('.form-msg').style.display='block';">
+        <div class="field"><label for="name">Name</label><input id="name" type="text" placeholder="Dein Name" required></div>
+        <div class="field"><label for="email">E-Mail</label><input id="email" type="email" placeholder="du@mail.ch" required></div>
+        <div class="field"><label for="service">Was möchtest du?</label>
+          <select id="service"><option>Tattoo</option><option>Piercing</option><option>Bodymodification</option><option>Beauty / Hyaluron</option><option>Beratung</option></select>
+        </div>
+        <div class="field"><label for="msg">Deine Idee</label><textarea id="msg" rows="5" placeholder="Beschreib dein Motiv, Grösse, Körperstelle…"></textarea></div>
+        <button class="btn" type="submit">Anfrage senden</button>
+        <p class="form-msg" style="display:none; margin-top:16px; color:var(--blood)">Danke! Das ist eine Vorschau — verbinde das Formular später mit deinem Mail-/Form-Dienst.</p>
+      </form>
+
+      <!-- STUDIOS -->
+      <div id="standorte" data-reveal data-delay="1">
+        <h2 class="h-lg" style="margin-bottom:24px">Standorte</h2>
+        <div class="studio-card">
+          <h3>R Ink — St. Margrethen</h3>
+          <p>Grenzstrasse 25 · 9430 St. Margrethen</p>
+          <p style="margin-top:8px">Seit 2014 — professionelle Artisten &amp; internationale Gastartisten.</p>
+          <p style="margin-top:10px"><strong style="color:var(--bone)">Öffnungszeiten</strong><br>Mo – Fr: 10.00 – 20.00 Uhr<br>Sa: 10.00 – 16.00 Uhr<br>So: geschlossen<br><em>Termine nach Vereinbarung</em></p>
+          <p style="margin-top:10px"><a href="https://wa.me/+41762288977">WhatsApp +41 76 228 89 77</a></p>
+        </div>
+        <div class="studio-card">
+          <h3>R Ink — St. Gallen</h3>
+          <p>Tattoo · Piercing · Lifestyle</p>
+          <p style="margin-top:8px">Seit 2020 — Du kommst als Kunde/in und gehst als Freund/in.</p>
+          <p style="margin-top:10px"><strong style="color:var(--bone)">Öffnungszeiten</strong><br>Mo – Fr: vorübergehend geschlossen</p>
+          <p style="margin-top:10px"><a href="https://wa.me/+41795556371">WhatsApp +41 79 555 63 71</a></p>
+        </div>
+        <div class="studio-card">
+          <h3>Kontakt &amp; Social</h3>
+          <p style="margin-top:8px"><a href="mailto:info@r-ink.ch">info@r-ink.ch</a> · <a href="https://www.r-ink.ch">www.r-ink.ch</a></p>
+          <p style="margin-top:8px">
+            <a href="https://www.instagram.com/riverside_ink.ch/">Instagram</a> ·
+            <a href="https://www.facebook.com/riversideink.lifestyle">Facebook</a> ·
+            <a href="https://www.m.me/riversideink.lifestyle">Messenger</a>
+          </p>
+        </div>
+        <div class="studio-card" id="jobs">
+          <h3>Offene Stellen</h3>
+          <p style="margin-top:8px">Du bist Artist, Piercer/in oder Beauty-Profi und willst Teil des Teams werden? Schreib uns!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="js/layout.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
